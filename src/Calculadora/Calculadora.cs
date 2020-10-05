@@ -6,5 +6,15 @@ namespace Calculadora
         {
             return a + b;
         }
+
+        public int Subtração(int a, int b)
+        {
+            return a - b;
+        }
+
+        public int Multiplicação(int a, int b)
+        {
+            return a * b;
+        }
     }
 }
