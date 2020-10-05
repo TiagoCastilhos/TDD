@@ -31,9 +31,17 @@ namespace Calculadora.Tests
         [TestCase(1, 2, ExpectedResult = 2)]
         [TestCase(30, 2, ExpectedResult = 60)]
         [TestCase(2, 30, ExpectedResult = 60)]
-        public int Multiplicação_DeveriaMultiplicarDoisValores(int a, int b)
+        public int Multiplicacao_DeveriaMultiplicarDoisValores(int a, int b)
         {
-            return _calculadora.Multiplicação(a, b);
+            return _calculadora.Multiplicacao(a, b);
+        }
+
+        [TestCase(4, 2, ExpectedResult = 2)]
+        [TestCase(30, 2, ExpectedResult = 15)]
+        [TestCase(2, 0, ExpectedResult = 60)]
+        public decimal Divisao_DeveriaDividirDoisValores(int a, int b)
+        {
+            return _calculadora.Divisao(a, b);
         }
     }
 }

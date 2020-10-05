@@ -12,9 +12,14 @@ namespace Calculadora
             return a - b;
         }
 
-        public int Multiplicação(int a, int b)
+        public int Multiplicacao(int a, int b)
         {
             return a * b;
+        }
+
+        public decimal Divisao(int dividendo, int divisor)
+        {
+            return dividendo / divisor;
         }
     }
 }
