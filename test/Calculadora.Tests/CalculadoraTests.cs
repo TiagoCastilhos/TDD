@@ -1,3 +1,4 @@
+using Calculadora.Exceptions;
 using NUnit.Framework;
 
 namespace Calculadora.Tests
@@ -38,10 +39,15 @@ namespace Calculadora.Tests
 
         [TestCase(4, 2, ExpectedResult = 2)]
         [TestCase(30, 2, ExpectedResult = 15)]
-        [TestCase(2, 0, ExpectedResult = 60)]
         public decimal Divisao_DeveriaDividirDoisValores(int a, int b)
         {
             return _calculadora.Divisao(a, b);
+        }
+
+        [Test]
+        public void Divisao_DivisorEhZero_DeveriaDispararDivisaoPorZeroException()
+        {
+            Assert.Throws<DivisaoPorZeroException>(() => _calculadora.Divisao(5, 0)); 
         }
     }
 }

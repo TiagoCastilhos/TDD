@@ -1,3 +1,5 @@
+using Calculadora.Exceptions;
+
 namespace Calculadora
 {
     public class Calculadora
@@ -19,6 +21,9 @@ namespace Calculadora
 
         public decimal Divisao(int dividendo, int divisor)
         {
+            if (divisor == 0)
+                throw new DivisaoPorZeroException();
+                
             return dividendo / divisor;
         }
     }
