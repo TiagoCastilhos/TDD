@@ -9,7 +9,7 @@ namespace Calculadora
             return a + b;
         }
 
-        public int Subtração(int a, int b)
+        public int Subtracao(int a, int b)
         {
             return a - b;
         }

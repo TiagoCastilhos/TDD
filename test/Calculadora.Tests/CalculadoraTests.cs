@@ -26,7 +26,7 @@ namespace Calculadora.Tests
         [TestCase(2, 30, ExpectedResult = -28)]
         public int Subtracao_DeveriaSubtrairDoisValores(int a, int b)
         {
-            return _calculadora.Subtração(a, b);
+            return _calculadora.Subtracao(a, b);
         }
 
         [TestCase(1, 2, ExpectedResult = 2)]

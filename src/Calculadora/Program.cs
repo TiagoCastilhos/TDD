@@ -56,7 +56,7 @@ namespace Calculadora
             var a = int.Parse(Console.ReadLine());
             Console.WriteLine("Escolha o segundo numero:");
             var b = int.Parse(Console.ReadLine());
-            var resultado = calculadora.Subtração(a, b);
+            var resultado = calculadora.Subtracao(a, b);
 
             Console.WriteLine($"Resultado da subtracao: {resultado}");
         }
